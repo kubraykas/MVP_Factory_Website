@@ -5,21 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MVP FACTORY - Project Management Platform by Roket</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+    <script defer src="translations.js"></script>
 </head>
 <body>
     <!-- NAVBAR -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="nav-logo">
+            <div class="nav-logo" style="display: flex; flex-direction: column; align-items: center;">
+                <img src="ROKET_logo_siyah_transparent.png" alt="Roket Logo" class="roket-logo" style="height: 32px !important; width: auto !important;">
                 <h2>MVP FACTORY</h2>
-                <span class="by-roket">by Roket</span>
             </div>
             <div class="nav-menu">
                 <a href="#product">Product</a>
                 <a href="#how-it-works">How it works</a>
                 <a href="#pricing">Pricing</a>
-                <a href="#resources">Resources</a>
+                <div class="language-selector">
+                    <button class="lang-btn active" data-lang="en" onclick="setLanguage('en')">EN</button>
+                    <button class="lang-btn" data-lang="tr" onclick="setLanguage('tr')">TR</button>
+                </div>
             </div>
             <div class="nav-buttons">
                 <button class="btn btn-outline" onclick="openContactModal()">Contact Sales</button>
@@ -33,11 +38,12 @@
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1 class="hero-title">Not just project management. A real MVP factory.</h1>
-                <p class="hero-subtitle">Plan, track and deliver projects with clarity — everything your team needs in one workspace.</p>
+                <h1 class="hero-title" data-i18n-html="heroTitle">Build faster. Deliver smarter. This is your <span class="mvp-highlight">MVP FACTORY</span>.</h1>
+                <p class="hero-subtitle" data-i18n="heroSubtitle">Plan, track and deliver with total clarity — from your first task to your last milestone, everything your team needs lives in one place.</p>
 
                 <div class="hero-explanation">
-                    <p>MVP FACTORY transforms the way teams work by combining intuitive visual project management with powerful automation capabilities. Built for teams who demand clarity, accountability, and seamless collaboration without the complexity.</p>
+                    <p data-i18n="heroExplanation">The best teams don't just work hard — they work in sync. MVP FACTORY gives every team member, manager and stakeholder a single source of truth: real-time visibility, clear ownership, and zero guesswork.
+From idea to delivery — without the complexity.</p>
                 </div>
             </div>
             <div class="hero-image">
@@ -111,177 +117,51 @@
         </div>
     </section>
 
-    <!-- SOCIAL PROOF -->
-    <section class="social-proof">
+    <!-- CORE FEATURES / PRODUCT -->
+    <section class="features" id="product">
         <div class="container">
-            <h2 class="section-title">Teams that get things done use MVP FACTORY.</h2>
-            <div class="testimonial-cards">
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <p>"MVP FACTORY helped us deliver our product 30% faster than expected."</p>
-                        <div class="testimonial-author">
-                            <div class="avatar">JS</div>
-                            <div>
-                                <h4>Jane Smith</h4>
-                                <p>CTO, TechStartup</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <p>"Finally, a project management tool that gets out of the way and lets us focus on building."</p>
-                        <div class="testimonial-author">
-                            <div class="avatar">MJ</div>
-                            <div>
-                                <h4>Mike Johnson</h4>
-                                <p>Lead Developer, ProductLab</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <p>"The kanban boards and sprint planning features are game-changers for our workflow."</p>
-                        <div class="testimonial-author">
-                            <div class="avatar">AR</div>
-                            <div>
-                                <h4>Anna Roberts</h4>
-                                <p>Product Manager, InnovateCo</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CORE FEATURES -->
-    <section class="features">
-        <div class="container">
-            <h2 class="section-title">Core Features</h2>
+            <h2 class="section-title" data-i18n="coreFeatures">Core Features</h2>
             <div class="feature-grid">
                 <div class="feature-card">
-                    <div class="feature-number">01</div>
+                    <div class="feature-number"><i class="fas fa-check"></i></div>
                     <div class="feature-content">
-                        <h3>Project Management</h3>
-                        <p>Manage everything from simple tasks to complex projects. Break down work into tasks, track progress with status labels, and monitor completion with visual progress bars. Access real-time dashboards for instant insights.</p>
+                        <h3 data-i18n="feature1Title">PMI Compliant Enterprise Governance</h3>
+                        <p data-i18n="feature1Desc">International project management standards with complete compatibility. An infrastructure covering Integration, Scope, Time, Cost, Quality, Resource, Communication, Risk, Procurement, and Stakeholder management — all under one roof, faithful to methodology.</p>
                     </div>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-number">02</div>
+                    <div class="feature-number"><i class="fas fa-lightbulb"></i></div>
                     <div class="feature-content">
-                        <h3>Team & Client Management</h3>
-                        <p>Store employees and clients in a centralized database. Assign team members to projects, manage contact information, and track statuses. Find anyone instantly with advanced search and filtering.</p>
+                        <h3 data-i18n="feature2Title">AI-Powered Decision Support</h3>
+                        <p data-i18n="feature2Desc">The platform doesn't just collect data, it analyzes and alerts you. It detects project risks in advance, flags performance anomalies, recommends resource optimization. Executives make decisions with insights, not data.</p>
                     </div>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-number">03</div>
+                    <div class="feature-number"><i class="fas fa-lock"></i></div>
                     <div class="feature-content">
-                        <h3>Live Collaboration</h3>
-                        <p>Connect face-to-face using integrated video conferencing. Monitor changes through the live activity feed. Conduct presentations and meetings without switching tools. Chat in real-time for efficient communication.</p>
+                        <h3 data-i18n="feature3Title">Role, Permission & Security Management</h3>
+                        <p data-i18n="feature3Desc">Create sophisticated access control with unit, role, and user-based permissions. Control who sees what, who can edit what — customize your entire access hierarchy to match your organizational structure.</p>
                     </div>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-number">04</div>
+                    <div class="feature-number"><i class="fas fa-link"></i></div>
                     <div class="feature-content">
-                        <h3>Calendar & Planning</h3>
-                        <p>Visualize projects, tasks, and events on an intuitive calendar. Track deadlines, manage team schedules, and ensure no critical dates are missed. Keep everyone aligned with centralized calendar management.</p>
+                        <h3 data-i18n="feature5Title">Universal Integration Infrastructure</h3>
+                        <p data-i18n="feature5Desc">Connect to your existing ERP systems, Supply Management Portals, and Active Directory infrastructure via REST Web Services. MVP FACTORY doesn't invalidate your organization's existing technology investments — it strengthens them.</p>
                     </div>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-number">05</div>
+                    <div class="feature-number"><i class="fas fa-chart-bar"></i></div>
                     <div class="feature-content">
-                        <h3>Notes & Documentation</h3>
-                        <p>Capture project notes, meeting records, and critical information in a centralized notebook. Document ideas, share insights with your team, and maintain a searchable knowledge base accessible to everyone.</p>
+                        <h3 data-i18n="feature6Title">Enterprise Analytics & Reporting</h3>
+                        <p data-i18n="feature6Desc">Perform performance analysis at every level from portfolio to task. View the specific sections you need with detailed filters, export reports in different formats, base your executive presentations on data.</p>
                     </div>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-number">06</div>
+                    <div class="feature-number"><i class="fas fa-building"></i></div>
                     <div class="feature-content">
-                        <h3>Analytics & Reporting</h3>
-                        <p>Generate comprehensive reports to analyze performance and measure productivity. Export reports in various formats for stakeholders. Make data-driven decisions using real-time insights from all activities.</p>
-                    </div>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-number">07</div>
-                    <div class="feature-content">
-                        <h3>Administration & Control</h3>
-                        <p>Control your platform with a powerful admin panel. Manage user permissions, define access levels, and ensure security. Maintain compliance and manage all operations from one centralized location.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- HOW IT WORKS -->
-    <section class="how-it-works">
-        <div class="container">
-            <h2 class="section-title">How It Works</h2>
-            <p class="section-subtitle">Get started in minutes with our intuitive workflow. Create projects, assign tasks, and track progress with simple drag-and-drop functionality that reduces complexity and accelerates delivery.</p>
-            <div class="steps">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <h3>Create a project</h3>
-                    <p>Set up your workspace and define your goals.</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <h3>Add tasks</h3>
-                    <p>Break down your work into manageable pieces.</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <h3>Assign teammates</h3>
-                    <p>Collaborate effectively with your team.</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">4</div>
-                    <h3>Track progress</h3>
-                    <p>Monitor and adjust as work evolves.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- PRODUCT PREVIEW -->
-    <section class="product-preview">
-        <div class="container">
-            <h2 class="section-title">See everything. Miss nothing.</h2>
-            <div class="preview-mockup">
-                <div class="preview-tabs">
-                    <div class="tab active">Boards</div>
-                    <div class="tab">Tasks</div>
-                    <div class="tab">Timeline</div>
-                    <div class="tab">Team</div>
-                </div>
-                <div class="preview-content">
-                    <div class="preview-boards">
-                        <div class="board-column">
-                            <h4>Backlog</h4>
-                            <div class="preview-task">Feature request: User authentication</div>
-                            <div class="preview-task">Bug fix: Login page responsive</div>
-                            <div class="preview-task">Refactor: Database queries</div>
-                        </div>
-                        <div class="board-column">
-                            <h4>Ready</h4>
-                            <div class="preview-task">Implement user dashboard</div>
-                            <div class="preview-task">Update payment system</div>
-                        </div>
-                        <div class="board-column">
-                            <h4>In Progress</h4>
-                            <div class="preview-task">API integration v2</div>
-                            <div class="preview-task">Mobile app redesign</div>
-                        </div>
-                        <div class="board-column">
-                            <h4>Review</h4>
-                            <div class="preview-task">Security audit</div>
-                        </div>
-                        <div class="board-column">
-                            <h4>Done</h4>
-                            <div class="preview-task">Database migration</div>
-                            <div class="preview-task">UI component library</div>
-                        </div>
+                        <h3 data-i18n="feature7Title">Digital Twin Method</h3>
+                        <p data-i18n="feature7Desc">Create a digital model of all your organization's processes. Whatever happens in the real world, the platform reflects it instantly. Generate scenarios, run simulations, test your decisions — before bringing them to life.</p>
                     </div>
                 </div>
             </div>
@@ -291,28 +171,189 @@
     <!-- FUTURE PRODUCTS -->
     <section class="future-products">
         <div class="container">
-            <h2 class="section-title">MVP FACTORY will grow with you.</h2>
-            <p class="section-subtitle">Starting with project management excellence, we're building an integrated ecosystem. Our roadmap includes CRM, HR, LMS, and Product Management modules designed to grow with your organization.</p>
+            <h2 class="section-title" data-i18n="productsTitle">MVP FACTORY will grow with you.</h2>
+            <p class="section-subtitle" data-i18n="productsSubtitle">Starting with our ready-to-use Project Management (PMS) module, we're building an integrated ecosystem that expands based on your organization's needs. Our roadmap includes scalable Process, Product (PROD), Training (LMS), and Human Resources (HR) modules.</p>
             <div class="products-grid">
-                <div class="product-card coming-soon">
-                    <h3>CRM</h3>
-                    <p>Manage customer relationships</p>
-                    <span class="badge">Coming soon</span>
+                <div class="product-card">
+                    <h3 data-i18n="projectPMS">Project (PMS)</h3>
+                    <p data-i18n="projectDesc">Project management and tracking</p>
+                    <span class="badge ready" data-i18n="readyForSale">Ready for Sale</span>
                 </div>
                 <div class="product-card coming-soon">
-                    <h3>HR</h3>
-                    <p>Streamline human resources</p>
-                    <span class="badge">Coming soon</span>
+                    <h3 data-i18n="processProc">Process (PROC)</h3>
+                    <p data-i18n="processDesc">Process management and automation</p>
+                    <span class="badge" data-i18n="comingSoon">Coming soon</span>
                 </div>
                 <div class="product-card coming-soon">
-                    <h3>LMS</h3>
-                    <p>Learning management system</p>
-                    <span class="badge">Coming soon</span>
+                    <h3 data-i18n="productProd">Product (PROD)</h3>
+                    <p data-i18n="productDesc">Product management and lifecycle</p>
+                    <span class="badge" data-i18n="comingSoon">Coming soon</span>
                 </div>
                 <div class="product-card coming-soon">
-                    <h3>Product Management</h3>
-                    <p>Complete product lifecycle</p>
-                    <span class="badge">Coming soon</span>
+                    <h3 data-i18n="trainingLMS">Training (LMS)</h3>
+                    <p data-i18n="trainingDesc">Training and learning management system</p>
+                    <span class="badge" data-i18n="comingSoon">Coming soon</span>
+                </div>
+                <div class="product-card coming-soon">
+                    <h3 data-i18n="hrModule">Human Resources (HR)</h3>
+                    <p data-i18n="hrDesc">HR operations and management</p>
+                    <span class="badge" data-i18n="comingSoon">Coming soon</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ROKET PRODUCTS -->
+    <section class="roket-products">
+        <div class="container">
+            <div class="roket-products-content">
+                <div class="roket-text">
+                    <h2 class="section-title" data-i18n="roketProductsTitle">Our Product Ecosystem</h2>
+                    <p data-i18n="roketProductsDesc">MVP FACTORY is part of Roket's comprehensive suite of business management solutions. Designed to work seamlessly together, our products help teams collaborate, innovate, and deliver exceptional results across all aspects of project management and organizational development.</p>
+                </div>
+                <div class="roket-image">
+                    <div class="ecosystem-diagram-wrapper">
+                        <img src="Roket_PMS_TEMS_Teknopark.png" alt="Roket Products - PMS, TEMS, Teknopark">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECT MANAGEMENT SYSTEM -->
+    <section class="pms-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n-html="pmsTitle">Project Management System (PMS): Manage Your Projects End-to-End</h2>
+            <div class="pms-intro">
+                <p data-i18n="pmsIntro1">As teams grow, projects become complex. Tasks multiply, responsibilities blur, deadlines slip. Most tools merely make this chaos visible — they don't solve it.</p>
+                <p data-i18n="pmsIntro2">MVP Factory's Project Management System (PMS) takes a different approach. It brings together scattered tools, disconnected communication, and data silos into a single integrated platform. Your organization's project data, teams, and workflows now live under one roof — transparent, traceable, and completely under your control.</p>
+            </div>
+            <div class="pms-visual">
+                <div class="video-container">
+                    <iframe class="pms-video" src="https://www.youtube.com/embed/AznzOdQN11U" title="Project Management System (PMS) Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="pms-grid">
+                <div class="pms-card">
+                    <div class="pms-icon"><i class="fas fa-chart-bar"></i></div>
+                    <div class="card-text">
+                        <h3 data-i18n="pmsFeature1Title">Visual Dashboards</h3>
+                        <p data-i18n="pmsFeature1Desc">Kanban, List & Timeline views in one click. Drag-and-drop status updates with instant team visibility.</p>
+                    </div>
+                </div>
+                <div class="pms-card">
+                    <div class="pms-icon"><i class="fas fa-users"></i></div>
+                    <div class="card-text">
+                        <h3 data-i18n="pmsFeature2Title">Team Management</h3>
+                        <p data-i18n="pmsFeature2Desc">Centralized database for team & clients. Smart assignments, contact insights, relationship tracking.</p>
+                    </div>
+                </div>
+                <div class="pms-card">
+                    <div class="pms-icon"><i class="fas fa-calendar-alt"></i></div>
+                    <div class="card-text">
+                        <h3 data-i18n="pmsFeature3Title">Calendar Planning</h3>
+                        <p data-i18n="pmsFeature3Desc">Visual milestone planning with resource conflict detection and capacity balancing.</p>
+                    </div>
+                </div>
+                <div class="pms-card">
+                    <div class="pms-icon"><i class="fas fa-sticky-note"></i></div>
+                    <div class="card-text">
+                        <h3 data-i18n="pmsFeature4Title">Notes & Memory</h3>
+                        <p data-i18n="pmsFeature4Desc">Capture decisions, meeting notes & archives. Organizational knowledge always accessible.</p>
+                    </div>
+                </div>
+                <div class="pms-card">
+                    <div class="pms-icon"><i class="fas fa-chart-line"></i></div>
+                    <div class="card-text">
+                        <h3 data-i18n="pmsFeature5Title">Progress Reports</h3>
+                        <p data-i18n="pmsFeature5Desc">Real-time health monitoring with visual indicators and automatic stakeholder updates.</p>
+                    </div>
+                </div>
+                <div class="pms-card">
+                    <div class="pms-icon"><i class="fas fa-comments"></i></div>
+                    <div class="card-text">
+                        <h3 data-i18n="pmsFeature6Title">Live Collaboration</h3>
+                        <p data-i18n="pmsFeature6Desc">Built-in video conferencing, screen sharing, and activity feeds. No tool switching needed.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <h2 class="section-title" data-i18n="howItWorksTitle">How It Works</h2>
+            <p class="section-subtitle" data-i18n="howItWorksSubtitle">Get started in minutes with our intuitive workflow. Create projects, assign tasks, and track progress with simple drag-and-drop functionality that reduces complexity and accelerates delivery.</p>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3 data-i18n="step1Title">Create a project</h3>
+                    <p data-i18n="step1Desc">Set up your workspace and define your goals.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3 data-i18n="step2Title">Add tasks</h3>
+                    <p data-i18n="step2Desc">Break down your work into manageable pieces.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3 data-i18n="step3Title">Assign teammates</h3>
+                    <p data-i18n="step3Desc">Collaborate effectively with your team.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3 data-i18n="step4Title">Track progress</h3>
+                    <p data-i18n="step4Desc">Monitor and adjust as work evolves.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCT PREVIEW -->
+    <section class="product-preview">
+        <div class="container">
+            <h2 class="section-title" data-i18n="productPreviewTitle">See everything. Miss nothing.</h2>
+            <div class="preview-mockup">
+                <div class="carousel">
+                    <div class="carousel-container">
+                        <div class="carousel-slide active">
+                            <img src="pms.png" alt="Project Management System Preview 1">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="pms1.png" alt="Project Management System Preview 2">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="pms2.png" alt="Project Management System Preview 3">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="pms3.png" alt="Project Management System Preview 4">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="pms4.png" alt="Project Management System Preview 5">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="pms5.png" alt="Project Management System Preview 6">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="pms6.png" alt="Project Management System Preview 7">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="pms7.png" alt="Project Management System Preview 8">
+                        </div>
+                    </div>
+                    <button class="carousel-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+                    <button class="carousel-btn next" onclick="moveSlide(1)">&#10095;</button>
+                    <div class="carousel-dots">
+                        <span class="dot active" onclick="goToSlide(0)"></span>
+                        <span class="dot" onclick="goToSlide(1)"></span>
+                        <span class="dot" onclick="goToSlide(2)"></span>
+                        <span class="dot" onclick="goToSlide(3)"></span>
+                        <span class="dot" onclick="goToSlide(4)"></span>
+                        <span class="dot" onclick="goToSlide(5)"></span>
+                        <span class="dot" onclick="goToSlide(6)"></span>
+                        <span class="dot" onclick="goToSlide(7)"></span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -321,8 +362,8 @@
     <!-- PRICING -->
     <section class="pricing" id="pricing">
         <div class="container">
-            <h2 class="section-title">Simple, transparent pricing</h2>
-            <p class="section-subtitle">Flexible pricing that scales with your team. Every plan includes core project management capabilities, with premium features available to support growing businesses and complex workflows.</p>
+            <h2 class="section-title" data-i18n="pricingTitle">Simple, transparent pricing</h2>
+            <p class="section-subtitle" data-i18n="pricingSubtitle">Flexible pricing that scales with your team. Every plan includes core project management capabilities, with premium features available to support growing businesses and complex workflows.</p>
             <div class="pricing-grid">
                 <div class="pricing-card">
                     <h3 class="pricing-title">Starter</h3>
@@ -330,7 +371,7 @@
                     <div class="price"><span>$7</span> <span class="period">/month</span></div>
                     <button class="btn btn-gradient" onclick="openSignupModal()">Start Free Trial</button>
                     <ul class="features-list">
-                        <li><span class="check-icon">✓</span> Up to 15 users</li>
+                        <li><span class="check-icon">✓</span> Up to 5 users</li>
                         <li><span class="check-icon">✓</span> Unlimited projects</li>
                         <li><span class="check-icon">✓</span> Everything in Free</li>
                         <li><span class="check-icon">✓</span> Progress tracking</li>
@@ -347,7 +388,7 @@
                     <button class="btn btn-white" onclick="openSignupModal()">Get Started</button>
                     <ul class="features-list">
                         <li><span class="check-icon">✓</span> Everything in Starter</li>
-                        <li><span class="check-icon">✓</span> Unlimited users</li>
+                        <li><span class="check-icon">✓</span> Up to 25 users</li>
                         <li><span class="check-icon">✓</span> Video conferencing</li>
                         <li><span class="check-icon">✓</span> Team chat</li>
                         <li><span class="check-icon">✓</span> Advanced reports</li>
@@ -377,7 +418,7 @@
     <!-- FINAL CTA -->
     <section class="cta">
         <div class="container">
-            <h2 class="section-title">Your projects deserve better than chaos.</h2>
+            <h2 class="section-title" data-i18n="ctaTitle">Your projects deserve better than chaos.</h2>
         </div>
     </section>
 
@@ -386,32 +427,31 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <h3>MVP FACTORY</h3>
-                    <p>by Roket</p>
+                    <div class="footer-logo-header">
+                        <img src="ROKET_logo_beyaz_transparent.png" alt="Roket Logo" class="roket-logo">
+                        <h3>MVP FACTORY</h3>
+                    </div>
                 </div>
                 <div class="footer-links">
                     <div class="footer-column">
                         <h4>Product</h4>
-                        <a href="#">Features</a>
-                        <a href="#">Pricing</a>
-                        <a href="#">Integrations</a>
+                        <a href="#product">Features</a>
+                        <a href="#pricing">Pricing</a>
                     </div>
                     <div class="footer-column">
                         <h4>Company</h4>
-                        <a href="#">About</a>
-                        <a href="#">Careers</a>
-                        <a href="#">Contact</a>
+                        <a href="#how-it-works">How it Works</a>
+                        <a href="javascript:void(0);" onclick="openContactModal()">Contact Sales</a>
                     </div>
                     <div class="footer-column">
-                        <h4>Resources</h4>
-                        <a href="#">Blog</a>
-                        <a href="#">Help Center</a>
-                        <a href="#">Community</a>
+                        <h4>Contact</h4>
+                        <p style="margin: 0; font-size: 14px; color: #6B7280;"><strong>E-mail:</strong> <a href="mailto:info@arvis.com.tr" style="color: #2B70B3; text-decoration: none;">info@arvis.com.tr</a></p>
+                        <p style="margin: 8px 0 0 0; font-size: 12px; color: #6B7280; line-height: 1.4;"><strong>Address:</strong> Teknopark İstanbul, Sanayi Mah. Teknopark Bulvarı No:1/4C 34906 Pendik/İstanbul</p>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 MVP FACTORY by Roket. All rights reserved.</p>
+                <p>&copy; 2026 MVP FACTORY by Roket. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -598,6 +638,41 @@
                 closeSignupModal();
             }
         }
+
+        // Carousel Functions
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel-slide');
+        const dots = document.querySelectorAll('.dot');
+        const totalSlides = slides.length;
+
+        function showSlide(index) {
+            if (index >= totalSlides) {
+                currentSlide = 0;
+            } else if (index < 0) {
+                currentSlide = totalSlides - 1;
+            } else {
+                currentSlide = index;
+            }
+
+            slides.forEach(slide => slide.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+
+            slides[currentSlide].classList.add('active');
+            dots[currentSlide].classList.add('active');
+        }
+
+        function moveSlide(direction) {
+            showSlide(currentSlide + direction);
+        }
+
+        function goToSlide(index) {
+            showSlide(index);
+        }
+
+        // Auto-advance carousel every 3 seconds
+        setInterval(() => {
+            moveSlide(1);
+        }, 3000);
     </script>
 </body>
 </html>
