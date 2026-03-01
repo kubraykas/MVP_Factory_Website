@@ -86,6 +86,7 @@ const translations = {
         trainingDesc: "Training and learning management system",
         hrModule: "Human Resources (HR)",
         hrDesc: "HR operations and management",
+        infoRequest: "For detailed information about upcoming modules, please contact <a href='mailto:info@roket.info'>info@roket.info</a>.",
         readyForSale: "Ready for Sale",
         comingSoon: "Coming soon",
         
@@ -181,6 +182,7 @@ const translations = {
         trainingDesc: "Eğitim ve öğrenme yönetim sistemi",
         hrModule: "İnsan Kaynakları (HR)",
         hrDesc: "İK işlemleri ve yönetimi",
+        infoRequest: "Diğer modüller hakkında ayrıntı bilgi için lütfen <a href='mailto:info@roket.info'>info@roket.info</a> adresine yazınız.",
         readyForSale: "Satışa Hazır",
         comingSoon: "Yakında Çıkacak",
         
