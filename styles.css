@@ -489,7 +489,10 @@ section {
     font-weight: 700;
     margin-bottom: 20px;
     line-height: 1.15;
-    color: #111827;
+    background: linear-gradient(135deg, #2854A8, #2B70B3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     letter-spacing: -0.01em;
     position: relative;
     padding-bottom: 24px;
