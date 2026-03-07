@@ -1539,21 +1539,28 @@ section {
 .footer-logo {
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+    max-width: 125px;
+    max-height: 125px;
 }
 
 .footer-logo img {
     height: 125px !important;
+    max-height: 125px !important;
     width: auto !important;
     max-width: 125px !important;
     object-fit: contain !important;
+    display: block !important;
 }
 
 .footer-logo .roket-logo {
     height: 125px !important;
+    max-height: 125px !important;
     width: auto !important;
     max-width: 125px !important;
-    max-height: 125px !important;
     object-fit: contain !important;
+    display: block !important;
 }
 
 .footer-logo-header {
