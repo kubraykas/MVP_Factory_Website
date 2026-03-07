@@ -1618,6 +1618,7 @@ section {
     gap: 60px;
     flex: 1;
     flex-wrap: nowrap;
+    margin-left: 40px;
 }
 
 .footer-column {
