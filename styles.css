@@ -1542,17 +1542,17 @@ section {
 }
 
 .footer-logo img {
-    height: 280px !important;
+    height: 200px !important;
     width: auto !important;
-    max-width: 280px !important;
+    max-width: 200px !important;
     object-fit: contain !important;
 }
 
 .footer-logo .roket-logo {
-    height: 280px !important;
+    height: 200px !important;
     width: auto !important;
-    max-width: 280px !important;
-    max-height: 280px !important;
+    max-width: 200px !important;
+    max-height: 200px !important;
     object-fit: contain !important;
 }
 
