@@ -226,7 +226,7 @@ body {
 
 .nav-menu {
     display: flex;
-    gap: 30px;
+    gap: 40px;
 }
 
 .nav-menu a {
@@ -242,10 +242,10 @@ body {
 
 .language-selector {
     display: flex;
-    gap: 8px;
+    gap: 10px;
     border-left: 1px solid #e5e7eb;
-    padding-left: 20px;
-    margin-left: 20px;
+    padding-left: 30px;
+    margin-left: 30px;
 }
 
 .lang-btn {
@@ -273,7 +273,7 @@ body {
 
 .nav-buttons {
     display: flex;
-    gap: 15px;
+    gap: 25px;
 }
 
 /* SECTIONS */
