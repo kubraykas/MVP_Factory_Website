@@ -1536,9 +1536,9 @@ section {
 }
 
 .footer-logo img {
-    height: 200px !important;
+    height: 280px !important;
     width: auto !important;
-    max-width: 200px;
+    max-width: 280px;
     object-fit: contain !important;
 }
 
