@@ -220,11 +220,10 @@ body {
 }
 
 .roket-logo {
-    max-height: 100px;
+    height: 100px !important;
+    width: auto !important;
     max-width: 120px;
-    height: auto;
-    width: auto;
-    object-fit: contain;
+    object-fit: contain !important;
 }
 
 .nav-logo h2 {
@@ -1537,11 +1536,10 @@ section {
 }
 
 .footer-logo img {
-    max-height: 200px;
+    height: 200px !important;
+    width: auto !important;
     max-width: 200px;
-    height: auto;
-    width: auto;
-    object-fit: contain;
+    object-fit: contain !important;
 }
 
 .footer-logo-header {
