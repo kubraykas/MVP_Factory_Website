@@ -489,10 +489,7 @@ section {
     font-weight: 700;
     margin-bottom: 20px;
     line-height: 1.15;
-    background: linear-gradient(135deg, #2854A8, #2B70B3);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #111827;
     letter-spacing: -0.01em;
     position: relative;
     padding-bottom: 24px;
@@ -511,9 +508,14 @@ section {
 }
 
 .mvp-highlight {
+    color: #2854A8;
     text-transform: uppercase;
     font-weight: 800;
     letter-spacing: 0.05em;
+    background: linear-gradient(135deg, #2854A8, #2B70B3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .hero-subtitle {
