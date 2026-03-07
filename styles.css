@@ -1532,8 +1532,9 @@ section {
     display: flex;
     justify-content: space-between;
     margin-bottom: 40px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 40px;
+    align-items: flex-start;
 }
 
 .footer-logo {
@@ -1546,7 +1547,7 @@ section {
     height: 300px !important;
     max-height: 300px !important;
     overflow: hidden;
-    margin: 0 auto;
+    margin: 0;
 }
 
 .footer-logo img {
@@ -1614,7 +1615,8 @@ section {
 .footer-links {
     display: flex;
     gap: 60px;
-    flex-wrap: wrap;
+    flex: 1;
+    flex-wrap: nowrap;
 }
 
 .footer-column h4 {
