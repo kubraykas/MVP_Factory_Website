@@ -1536,6 +1536,14 @@ section {
     align-items: center;
 }
 
+.footer-logo img {
+    max-height: 200px;
+    max-width: 200px;
+    height: auto;
+    width: auto;
+    object-fit: contain;
+}
+
 .footer-logo-header {
     display: flex;
     flex-direction: column;
