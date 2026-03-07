@@ -1685,13 +1685,9 @@ section {
         min-width: 100%;
     }
     
-    .footer-content {
-        flex-direction: column;
-        gap: 30px;
-    }
-    
     .footer-links {
         gap: 30px;
+        flex-wrap: wrap;
     }
     
     .pricing-card.popular {
