@@ -1540,9 +1540,12 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex: 0 0 auto;
-    max-width: 125px;
-    max-height: 125px;
+    flex: 0 0 125px;
+    width: 125px !important;
+    max-width: 125px !important;
+    height: 125px !important;
+    max-height: 125px !important;
+    overflow: hidden;
 }
 
 .footer-logo img {
@@ -1552,6 +1555,8 @@ section {
     max-width: 125px !important;
     object-fit: contain !important;
     display: block !important;
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
 .footer-logo .roket-logo {
@@ -1561,6 +1566,8 @@ section {
     max-width: 125px !important;
     object-fit: contain !important;
     display: block !important;
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
 .footer-logo-header {
