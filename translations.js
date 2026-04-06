@@ -1,18 +1,26 @@
 const translations = {
     en: {
         // Navigation
-        product: "Product",
+        products: "Products",
+        solutions: "Solutions",
         howItWorks: "How it works",
+        aiFeatures: "AI",
         pricing: "Pricing",
+        enterprise: "About Us",
+        product: "Product",
+        aboutUs: "About Us",
         resources: "Resources",
         contactSales: "Contact Sales",
         login: "Login",
         getStarted: "Get Started",
         
         // Hero
-        heroTitle: "Manage the project. Ship the product. This is your <span class=\"mvp-highlight\">MVP FACTORY</span>.",
-        heroSubtitle: "Plan, track and deliver with total clarity — from your first task to your last milestone, everything your team needs lives in one place.",
-        heroExplanation: "The best teams don't just work hard — they work in sync. MVP FACTORY gives every team member, manager and stakeholder a single source of truth: real-time visibility, clear ownership, and zero guesswork. From idea to delivery — without the complexity.",
+        heroPretitle: "Digital transformation at \"ROKET\" speed on a <span style='white-space: nowrap;'>single platform!</span>",
+        heroMainTitle: "ROKET MVP FACTORY",
+        heroTitle: "AI-Powered Digital Product Development and Business Management Platform",
+        heroSubtitle: "With this platform, use a single management system for all layers of your business and operations. Manage your projects, assign tasks, schedule your staff, accelerate your products, and deliver your work.",
+        heroHighlight: "This is your <span class=\"mvp-highlight\">\"MVP Factory\"</span>. Leave behind scattered processes, inefficient production, and costly software.",
+        heroExplanation: "Take your business into the future with AI-powered, modular, and end-to-end management.",
         
         // Features
         coreFeatures: "Core Features",
@@ -33,6 +41,8 @@ const translations = {
         
         // PMS Section
         pmsTitle: "Project Management System (PMS):<br>Manage Your Projects End-to-End",
+        roketModulesIntro: "Plan, track and manage your projects with complete transparency with ROKET-PMS, everything your team needs from the first task to the last milestone on one platform.",
+        pmsQuote: "The best teams don't just work hard — they work in sync. ROKET-PMS provides a single source of truth for team members, managers, and stakeholders. Real-time visibility, clear accountability, and zero ambiguity. Manage the entire journey from idea to delivery — without the complexity.",
         pmsIntro1: "As teams grow, projects become complex.",
         pmsIntro2: "MVP Factory's Project Management System (PMS) brings together scattered tools, disconnected communication, and data silos into a single integrated platform.",
         
@@ -54,6 +64,35 @@ const translations = {
         pmsFeature6Title: "Live Collaboration",
         pmsFeature6Desc: "Built-in video conferencing and collaboration tools.",
         
+        // Version Comparison
+        version1Title: "Version 1:",
+        version1Subtitle: "Current Features:",
+        v1Feature1: "Dashboard with basic project statistics",
+        v1Feature2: "Project status tracking",
+        v1Feature3: "Member and employee management",
+        v1Feature4: "Task assignment and tracking",
+        v1Feature5: "Upcoming events and tasks view",
+        v1Feature6: "Calendar integration",
+        v1Feature7: "Notebook",
+        v1Feature8: "Basic progress percentage display",
+        v1Feature9: "Manual project creation",
+        v1Feature10: "Simple reporting",
+        v1Feature11: "Video Conference",
+        v1Feature12: "Team Messaging",
+        
+        version2Title: "Version 2:",
+        version2Subtitle: "Coming Soon:",
+        v2Feature1: "AI-Powered Project Planning",
+        v2Feature2: "Automatic duration estimation and resource allocation",
+        v2Feature3: "Budget control and cost analysis",
+        v2Feature4: "Detailed work time and productivity analysis",
+        v2Feature5: "Slack, Jira, GitHub integrations",
+        v2Feature6: "Pre-built project templates",
+        v2Feature7: "Full integration with other Module additions",
+        v2Feature8: "SDK integration kit",
+        v2Feature9: "Roket AI Agent",
+        v2Feature10: "Hands-Free -Roket AI Agent",
+        
         // How it works
         howItWorksTitle: "How It Works",
         howItWorksSubtitle: "Get started in minutes with our intuitive workflow.",
@@ -74,8 +113,42 @@ const translations = {
         
         // Roket Products
         roketProductsTitle: "Our Product Ecosystem",
-        roketProductsDesc: "MVP FACTORY is part of Roket's comprehensive suite of business management solutions.",
+        roketProductsIntro: "ROKET MVP FACTORY Platform with its Core Modules<br>Build Your Digital Operations, Manage Your Business and Scale",
+        roketProductsSubtitle: "ROKET MVP Factory platform consists of 7 integrated core modules:",
+        module1: ": Project and Team Management Module",
+        module2: ": Task and Work Tracking Management Module",
+        module3: ": Product Development and Portfolio Management Module",
+        module4: ": Training, Internship and Learning Management Module",
+        module5: ": Human Resources, CV and Candidate Pool Management Module",
+        module6: ": Business Process Management and Optimization Module",
+        module7: ": Digital Data Twin and AI Analytics Module",
+        roketProductsDesc: "With these modules, organizations can manage their projects and tasks more effectively, develop human resources, digitize training and internship processes, track product development processes from a single center, and make operational processes measurable.",
         roketEcosystemSubtitle: "AI-Powered<br>Interactive Process<br>Management Platform",
+        
+        // About Us
+        aboutTitle: "About Us",
+        aboutParagraph1: "Founded in 2024 at Teknopark Istanbul (Cube Incubation), ROKET is reshaping the world of industry and production with artificial intelligence.",
+        aboutParagraph2: "Our ROKET MVP Factory platform allows you to manage all processes of your business from a single platform, eliminating fragmented structures with a digital twin data model.",
+        aboutParagraph3: "We enable you to manage all critical areas from project management to product management, from task management to production, from training to human resources, from a single central hub.",
+        aboutParagraph4: "By transforming complex data into understandable insights, we reduce production losses, optimize costs, and accelerate your business.",
+        aboutParagraph5: "With ROKET MVP Factory, digital transformation is a fast, measurable, and profitable investment.",
+        
+        // What We Solve
+        solutionTitle: "Your Business's Digital Operating System: <span class=\"highlight-text\">ROKET MVP Factory</span>",
+        solutionIntro: "We consolidate fragmented data and management structures, the biggest challenge for businesses, into a single point. With ROKET MVP Factory Modules, we create your business's digital data twin and optimize all your business processes end-to-end with AI support.",
+        solutionQuestion: "What Problems Do We Solve?",
+        solution1Title: "From Fragmentation to Unity:",
+        solution1Desc: "We bring together all critical areas managed separately—such as projects, tasks, products, production, processes, human resources, and training—into a single platform.",
+        solution2Title: "From Rigid Structures to Scalability:",
+        solution2Desc: "With our modular and AI-powered structure, we instantly adapt to your business's growth pace. We offer a flexible technological infrastructure that shapes according to your needs with a modular structure.",
+        solution3Title: "From Complexity to Easy Implementation:",
+        solution3Desc: "We make AI \"accessible\" instead of \"unreachable.\" We add a user-friendly AI experience to your business management that integrates end-to-end with all your business processes without requiring technical knowledge.",
+        solution4Title: "From Data Loss to Meaningful Insights:",
+        solution4Desc: "We transform your fragmented, unreadable, and idle data into valuable assets that operate, are analyzed, and enable you to make strategic decisions.",
+        solution5Title: "From High Costs to Operational Profitability:",
+        solution5Desc: "We bring unplanned downtime and productivity losses in production to an operational state with a digital data twin model, enabling you to reduce costs and manage your business profitably with your data.",
+        solution6Title: "From Heavy Software to Agile Solutions:",
+        solution6Desc: "Instead of expensive, inflexible ERP/MRP/Management applications that require months-long installation processes, we establish a quickly deployable, economical ecosystem tailored exactly to your needs.",
         
         // Ecosystem Diagram
         ecosystemProcess: "Process<br>Management",
@@ -92,7 +165,6 @@ const translations = {
         
         starter: "Starter",
         professional: "Professional",
-        enterprise: "Enterprise",
         perMonth: "/month",
         
         // Products
@@ -124,25 +196,88 @@ const translations = {
         
         readyForSale: "Ready for Sale",
         comingSoon: "Coming soon",
-        
-        // CTA
+        watchOnYoutube: "Watch on YouTube",
+
+        // Who We Serve - Sectors
+        sectorsTitle: "Sectors:",
+        servedSector1: "Entrepreneurs",
+        servedSector2: "Small and Medium-Sized Businesses",
+        servedSector3: "Corporate Companies",
+        servedSector4: "Science & Technology Parks",
+        servedSector5: "Technology Offices",
+        servedSector6: "TEKMERs",
+        servedSector7: "Universities",
+        servedSector8: "Project Groups",
+        servedSector9: "Individual Users",
+        servedSector10: "Industrial Companies",
+        servedSector11: "Startup Offices",
+        partnersTitle: "Our Partners",
+        partner1: "Energy Companies",
+        partner2: "Robotics and Automation Manufacturers",
+        partner3: "Educational Institutions, Universities and SEMs",
+        partner4: "Technology, IT Companies and Start-Ups",
+        partner5: "Regulators",
+        partner6: "Cybersecurity Sector",
+        partner7: "Technology Parks and Incubators",
+        partner8: "Public Institutions and Municipalities",
+        partner9: "Finance, Banking, Insurance and E-Commerce",
+        partner10: "Legal Sector",
+        partner11: "Green Sustainability",
+        partner12: "Corporate Social Responsibility and NGOs",
+        partner13: "Defense and Security",
+        partner14: "Industrial Companies and OSBs",
+        partner15: "Industrial Companies and OSBs",
+        partner16: "Educational Institutions, Universities and SEMs",
+        partner17: "Various Academies",
+        partner18: "Development Agencies",
+        partner19: "Acceleration Centers",
+        partner20: "Technology Parks and Incubators",
+        partner21: "TEKMERs",
+        partner22: "Corporate Social Responsibility and NGOs",
+        partner23: "Private Sector Companies",
+
+                // Sector Collaborations
+        sectorTitle: "Sector Collaborations",
+        sector1: "Industrial Companies<br>& OSBs",
+        sector2: "Robotics and<br>Automation Manufacturers",
+        sector3: "Defense<br>& Security",
+        sector4: "Energy<br>Companies",
+        sector5: "Educational Institutions<br>Universities & SEMs",
+        sector6: "Corporate Social<br>Responsibility & NGOs",
+        sector7: "Technology IT Companies<br>Start-Ups",
+        sector8: "Public Institutions<br>Municipalities",
+        sector9: "Regulators",
+        sector10: "Technoparks<br>Incubators",
+        sector11: "Cyber<br>Security",
+        sector12: "Green<br>Sustainability",
+        sector13: "Law",
+        sector14: "Finance Banking<br>Insurance & E-commerce",
+                // CTA
         ctaTitle: "Your projects deserve better than chaos."
     },
 
     tr: {
         // Navigation
-        product: "Ürün",
+        products: "Ürünler",
+        solutions: "Çözümler",
         howItWorks: "Nasıl Çalışır",
+        aiFeatures: "Yapay Zeka",
         pricing: "Fiyatlandırma",
+        enterprise: "Kurumsal",
+        product: "Ürün",
+        aboutUs: "Hakkımızda",
         resources: "Kaynaklar",
         contactSales: "Satış ile İletişime Geç",
         login: "Giriş Yap",
         getStarted: "Hemen Başla",
         
         // Hero
-        heroTitle: "Projeni yönet, ürününü teslim et. Burası senin <span class=\"mvp-highlight\">MVP FACTORY</span>'n.",
-        heroSubtitle: "Planlayın, takip edin ve projelerinizi tam şeffaflıkla yönetin — ilk görevden son kilometre taşına kadar ekibinizin ihtiyaç duyduğu her şey tek bir platformda.",
-        heroExplanation: "En iyi ekipler sadece çok çalışmaz — uyum içinde çalışır. MVP FACTORY; ekip üyeleri, yöneticiler ve paydaşlar için tek bir güvenilir bilgi kaynağı sunar: gerçek zamanlı görünürlük, net sorumluluklar ve sıfır belirsizlik. Fikirden teslimata kadar tüm süreci karmaşıklık olmadan yönetin.",
+        heroPretitle: "Tek Platformda Roket Hızıyla <span style='white-space: nowrap;'>Dijital Dönüşüm</span>",
+        heroMainTitle: "ROKET MVP FACTORY",
+        heroTitle: "Yapay Zeka Destekli Dijital Ürün Geliştirme Ve İş Yönetim Platformu",
+        heroSubtitle: "İşinizin ve işletmenizin tüm katmanları için tek bir yönetim sistemi kullanın. Projenizi yönetin, görevlerinizi atayın, personelinizi planlayın, ürünlerinizi hızlandırın, işinizi teslim edin.",
+        heroHighlight: "Burası sizin <span class=\"mvp-highlight\">«MVP Factory»</span>'niz.",
+        heroExplanation: "Dağınık süreçleri, verimsiz üretimi ve yüksek maliyetli yazılımları geride bırakın. Yapay zeka destekli, modüler ve uçtan uca yönetimle işletmenizi geleceğe taşıyın.",
         
         // Features
         coreFeatures: "Temel Özellikler",
@@ -170,9 +305,10 @@ const translations = {
         
         // PMS Section
         pmsTitle: "Proje Yönetim Sistemi (PMS):<br>Projelerinizi Uçtan Uca Yönetin",
+        roketModulesIntro: "ROKET-PMS ile Projelerinizi Planlayın, takip edin ve projelerinizi tam şeffaflıkla yönetin, ilk görevden son kilometre taşına kadar ekibinizin ihtiyaç duyduğu her şey tek bir platformda.",
+        pmsQuote: "En iyi ekipler sadece çok çalışmaz, uyum içinde çalışır. ROKET-PMS; ekip üyeleri, yöneticiler ve paydaşlar için tek bir güvenilir bilgi kaynağı sunar! Gerçek zamanlı görünürlük, net sorumluluklar ve sıfır belirsizlik. Fikirden teslimata kadar tüm süreci karmaşıklık olmadan yönetin.",
         
         pmsIntro1: "Ekipler büyüdükçe projeler daha karmaşık hale gelir.",
-        
         pmsIntro2: "MVP Factory'nin Proje Yönetim Sistemi (PMS), dağınık araçları ve iletişimi tek bir platformda birleştirir.",
         
         pmsFeature1Title: "Görsel Proje Panoları",
@@ -192,6 +328,34 @@ const translations = {
         
         pmsFeature6Title: "Canlı İş Birliği",
         pmsFeature6Desc: "Platform içinde video görüşmeleri ve ekran paylaşımı yapın.",
+        
+        // Versiyon Karşılaştırması
+        version1Title: "Versiyon 1:",
+        version1Subtitle: "Mevcut Özellikler:",
+        v1Feature1: "Dashboard ile temel proje istatistikleri",
+        v1Feature2: "Proje durumu takibi",
+        v1Feature3: "Üye ve çalışan yönetimi",
+        v1Feature4: "Görev atama ve takibi",
+        v1Feature5: "Yaklaşan etkinlikler ve görevler görünümü",
+        v1Feature6: "Takvim entegrasyonu",
+        v1Feature7: "Not defteri",
+        v1Feature8: "Temel ilerleme yüzdesi gösterimi",
+        v1Feature9: "Manuel proje oluşturma",
+        v1Feature10: "Basit raporlama",
+        v1Feature11: "Video Konferans",
+        v1Feature12: "Ekip içi Mesajlaşma",
+        version2Title: "Versiyon 2:",
+        version2Subtitle: "Yakında:",
+        v2Feature1: "AI Destekli Proje Planlaması",
+        v2Feature2: "Otomatik süre tahmini ve kaynak dağılımı",
+        v2Feature3: "Bütçe kontrolü ve maliyet analizi",
+        v2Feature4: "Detaylı çalışma saati ve verimlilik analizi",
+        v2Feature5: "Slack, Jira, GitHub entegrasyonları",
+        v2Feature6: "Hazır proje şablonları",
+        v2Feature7: "Diğer Modül ilaveleri ile tam entegrasyon",
+        v2Feature8: "SDK entegrasyon kiti",
+        v2Feature9: "Roket AI Agent",
+        v2Feature10: "Eller Serbest -Roket AI Agent",
         
         // How it works
         howItWorksTitle: "Nasıl Çalışır",
@@ -213,8 +377,42 @@ const translations = {
         
         // Roket Products
         roketProductsTitle: "Ürün Ekosistemimiz",
-        roketProductsDesc: "MVP FACTORY, Roket'in iş yönetimi çözümleri ekosisteminin bir parçasıdır.",
+        roketProductsIntro: "ROKET MVP FACTORY Platformu<br>Temel Modülleri ile<br>Dijital Operasyonlarınızı Kurun, İşinizi Yönetin ve Ölçeklendirin",
+        roketProductsSubtitle: "ROKET MVP Factory platformu 7 entegre temel modülden oluşmaktadır:",
+        module1: ": Proje Ve Ekip Yönetimi Modülü",
+        module2: ": Görev Ve İş Takibi Yönetimi Modülü",
+        module3: ": Ürün Geliştirme Ve Portföy Yönetimi Modülü",
+        module4: ": Eğitim, Staj Ve Öğrenme Yönetimi Modülü",
+        module5: ": İnsan Kaynakları, CV ve Aday Havuzu Yönetimi Modülü",
+        module6: ": İş Süreçleri Yönetimi Ve Optimizasyon Modülü",
+        module7: ": Dijital Veri İkizi Ve Yapay Zeka Analitliği Modülü",
+        roketProductsDesc: "Bu modüller yapı sayesinde kurumlar proje ve görevlerini daha etkin yönetebilir, insan kaynağını geliştirebilir, eğitim ve staj süreçlerini dijitalleştirebilir, ürün geliştirme süreçlerini tek merkezden takip edebilir ve operasyonel süreçlerini ölçülebilir hale getirebilirler.",
         roketEcosystemSubtitle: "Yapay Zeka Destekli<br>İnteraktif Süreç<br>Yönetim Platformu",
+        
+        // About Us
+        aboutTitle: "Hakkımızda",
+        aboutParagraph1: "2024 yılında Teknopark İstanbul (Cube Incubation) bünyesinde kurulan ROKET, sanayi ve üretim dünyasını yapay zeka ile yeniden şekillendiriyor.",
+        aboutParagraph2: "Geliştirdiğimiz ROKET MVP Factory platformu, işletmenizin tüm süreçlerini tek bir platformdan yönetmenizi sağlıyor, dijital veri ikizi modeli ile, dağınık yapıları ortadan kaldırıyoruz.",
+        aboutParagraph3: "Proje yönetiminden, ürün yönetimine, görev yönetiminden, üretime, eğitim ve insan kaynaklarına kadar tüm kritik alanları tek merkezden yönetmenizi sağlıyoruz.",
+        aboutParagraph4: "Karmaşık verileri anlaşılır iç görülere dönüştürerek; üretim kayıplarını azaltıyor, maliyetleri optimize ediyor ve işletmenize hız kazandırıyoruz.",
+        aboutParagraph5: "ROKET MVP Factory ile dijital dönüşüm hızlı, ölçülebilir ve karlı bir yatırımdır.",
+        
+        // What We Solve
+        solutionTitle: "İşletmenizin Dijital İşletim Sistemi: <span class=\"highlight-text\">ROKET MVP Factory</span>",
+        solutionIntro: "İşletmelerin en büyük sorunu olan dağınık veri ve yönetim yapısını tek bir noktada topluyoruz. ROKET MVP Factory Modülleri ile, işinizin dijital veri ikizini oluşturuyor ve yapay zeka desteğiyle tüm iş süreçlerinizi uçtan uca optimize ediyoruz.",
+        solutionQuestion: "Neyi Çözüyoruz?",
+        solution1Title: "Dağınıklıktan Bütünlüğe:",
+        solution1Desc: "Proje, görev, ürün, üretim, süreç, insan kaynağı ve eğitim gibi birbirinden farklı yönetilen tüm kritik alanları tek bir platformda birleştiriyoruz.",
+        solution2Title: "Hantal Yapılardan Ölçeklenebilirliğe:",
+        solution2Desc: "Modüler ve yapay zeka destekli yapımızla, işletmenizin büyüme hızına anında uyum sağlıyoruz. Modüler yapı ile talebinize göre şekillenen, esnek bir teknolojik altyapı sunuyoruz.",
+        solution3Title: "Karmaşadan Kolay Uygulamaya:",
+        solution3Desc: "Yapay zekayı \"erişilemez\" olmaktan çıkarıyoruz. Uçtan uca tüm iş süreçlerinize entegre, teknik bilgi gerektirmeyen, kullanıcı dostu bir Yapay Zeka deneyimini işinizin yönetimine ekliyoruz.",
+        solution4Title: "Veri Kaybından Anlamlı İçgörülere:",
+        solution4Desc: "Dağınık, okunamaz ve atıl duran verilerinizi; işleyen, analiz edilen ve stratejik kararlar almanızı sağlayan değerli birer varlığa dönüştürüyoruz.",
+        solution5Title: "Yüksek Maliyetlerden Operasyonel Karlılığa:",
+        solution5Desc: "Üretimdeki plansız duruşları ve verimlilik kayıplarını dijital veri ikizi modeli ile işleyen hale getiriyor, verileriniz ile maliyetlerinizi düşürmenizi işinizi karlı yönetmenizi, sağlıyoruz.",
+        solution6Title: "Hantal Yazılımlardan Çevik Çözümlere:",
+        solution6Desc: "Pahalı, esnek olmayan ve aylarca süren kurulum süreçleri gerektiren ERP/MRP/Yönetim uygulamalarının yerine, hızlı devreye alınan, ekonomik ve tam ihtiyacınıza yönelik bir ekosistem kuruyoruz.",
         
         // Ecosystem Diagram
         ecosystemProcess: "Süreç<br>Yönetimi",
@@ -241,7 +439,7 @@ const translations = {
         projectPMS: "Proje (PMS)",
         projectDesc: "Proje yönetimi ve takip sistemi",
         
-        taskManagement: "Görev Yönetimi (GY)",
+        taskManagement: "Görev Yönetimi (TM)",
         taskManagementDesc: "Görev atama, takip ve iş akışı yönetimi",
         
         processProc: "Süreç (PROC)",
@@ -256,14 +454,53 @@ const translations = {
         hrModule: "İnsan Kaynakları (HR)",
         hrDesc: "İK süreçleri ve yönetimi",
         
-        digitalTwin: "Dijital İkiz (Dİ)",
+        digitalTwin: "Dijital İkiz (DT)",
         digitalTwinDesc: "Organizasyonunuzun veri tabanlı dijital kopyası",
         
         infoRequest: "Modüller hakkında detaylı bilgi almak için <a href='mailto:info@roket.info'>info@roket.info</a> adresine yazabilirsiniz.",
         
         readyForSale: "Satışa Hazır",
         comingSoon: "Yakında",
-        
+        watchOnYoutube: "YouTube'da İzle",
+
+        // Who We Serve - Sectors
+        sectorsTitle: "Sektörler:",
+        servedSector1: "Girişimciler",
+        servedSector2: "Küçük ve Orta Boy İşletmeler",
+        servedSector3: "Kurumsal Firmalar",
+        servedSector4: "Teknoparklar",
+        servedSector5: "Teknoloji Ofisleri",
+        servedSector6: "TEKMER'ler",
+        servedSector7: "Üniversiteler",
+        servedSector8: "Proje Grupları",
+        servedSector9: "Bireysel Kullanıcılar",
+        servedSector10: "Sanayi Şirketleri",
+        servedSector11: "Girişim Ofisleri",
+        partnersTitle: "İş Birlikçilerimiz",
+        partner1: "Enerji Şirketleri",
+        partner2: "Robotik ve Otomasyon Üreticileri",
+        partner3: "Eğitim Kurumları, Üniversiteler ve SEM'ler",
+        partner4: "Teknoloji, Bilişim Şirketleri ve Start-Up'lar",
+        partner5: "Regülatörler",
+        partner6: "Siber Güvenlik Sektörü",
+        partner7: "Teknoparklar ve Kuluçkalar",
+        partner8: "Kamu Kuruluşları ve Belediyeler",
+        partner9: "Finans, Bankacılık, Sigorta ve E-ticaret",
+        partner10: "Hukuk Sektörü",
+        partner11: "Yeşil Sürdürülebilirlik",
+        partner12: "Kurumsal Sosyal Sorumluluk ve STK'lar",
+        partner13: "Savunma ve Güvenlik",
+        partner14: "Sanayi Firmaları ve OSB'ler",
+        partner15: "Sanayi Firmaları ve OSB'ler",
+        partner16: "Eğitim Kurumları, Üniversiteler ve SEM'ler",
+        partner17: "Çeşitli Akademiler",
+        partner18: "Kalkınma Ajansları",
+        partner19: "Hızlandırma Merkezleri",
+        partner20: "Teknoparklar ve Kuluçkalar",
+        partner21: "TEKMER'ler",
+        partner22: "Kurumsal Sosyal Sorumluluk ve STK'lar",
+        partner23: "Özel Sektör Firmaları",
+
         // CTA
         ctaTitle: "Projeleriniz kaostan daha iyisini hak ediyor."
     }

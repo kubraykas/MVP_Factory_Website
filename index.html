@@ -17,18 +17,21 @@
                 <img src="ROKET_logo_siyah_transparent.png" alt="Roket Logo" class="roket-logo">
             </div>
             <div class="nav-menu">
-                <a href="#product">Product</a>
-                <a href="#how-it-works">How it works</a>
-                <a href="#pricing">Pricing</a>
+                <a href="#future-products" data-i18n="products">Products</a>
+                <a href="#what-we-solve" data-i18n="solutions">Solutions</a>
+                <a href="#how-it-works" data-i18n="howItWorks">How it works</a>
+                <a href="#version-comparison" data-i18n="aiFeatures">AI</a>
+                <a href="#pricing" data-i18n="pricing">Pricing</a>
+                <a href="#about" data-i18n="enterprise">Enterprise</a>
                 <div class="language-selector">
                     <button class="lang-btn active" data-lang="en" onclick="setLanguage('en')">EN</button>
                     <button class="lang-btn" data-lang="tr" onclick="setLanguage('tr')">TR</button>
                 </div>
             </div>
             <div class="nav-buttons">
-                <button class="btn btn-outline" onclick="openContactModal()">Contact Sales</button>
-                <button class="btn btn-outline" onclick="openLoginModal()">Login</button>
-                <button class="btn btn-primary" onclick="openSignupModal()">Get Started</button>
+                <button class="btn btn-outline" onclick="openContactModal()" data-i18n="contactSales">Contact Sales</button>
+                <button class="btn btn-outline" onclick="openLoginModal()" data-i18n="login">Login</button>
+                <button class="btn btn-primary" onclick="openSignupModal()" data-i18n="getStarted">Get Started</button>
             </div>
         </div>
     </nav>
@@ -37,13 +40,31 @@
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1 class="hero-title" data-i18n-html="heroTitle">Build faster. Deliver smarter. This is your <span class="mvp-highlight">MVP FACTORY</span>.</h1>
-                <p class="hero-subtitle" data-i18n="heroSubtitle">Plan, track and deliver with total clarity — from your first task to your last milestone, everything your team needs lives in one place.</p>
-
-                <div class="hero-explanation">
-                    <p data-i18n="heroExplanation">The best teams don't just work hard — they work in sync. MVP FACTORY gives every team member, manager and stakeholder a single source of truth: real-time visibility, clear ownership, and zero guesswork.
-From idea to delivery — without the complexity.</p>
+                <p class="hero-pretitle" data-i18n-html="heroPretitle">Digital Transformation with Roket Speed in One Platform 🚀</p>
+                <div class="hero-title-wrapper">
+                    <h1 class="hero-main-title" data-i18n-html="heroMainTitle">ROKET MVP FACTORY</h1>
+                    <img src="roket_new_emoji.png" alt="Roket" class="hero-roket-emoji">
                 </div>
+                <h2 class="hero-title" data-i18n-html="heroTitle">AI-Powered Digital Product Development and Business Management Platform</h2>
+                <p class="hero-subtitle" data-i18n="heroSubtitle">Use a single management system for all layers of your business. Manage your projects, assign your tasks, plan your personnel, accelerate your products, deliver your work.</p>
+                <p class="hero-highlight" data-i18n-html="heroHighlight">This is your <span class="mvp-highlight">«MVP Factory»</span>.</p>
+                <div class="hero-explanation">
+                    <p data-i18n="heroExplanation">Leave behind scattered processes, inefficient production, and high-cost software. Move your business into the future with AI-powered, modular, and end-to-end management.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT US -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="aboutTitle">About Us</h2>
+            <div class="about-content">
+                <p data-i18n="aboutParagraph1">Founded in 2024 at Teknopark Istanbul (Cube Incubation), ROKET is reshaping the world of industry and production with artificial intelligence.</p>
+                <p data-i18n="aboutParagraph2">Our ROKET MVP Factory platform allows you to manage all processes of your business from a single platform, eliminating fragmented structures with a digital twin data model.</p>
+                <p data-i18n="aboutParagraph3">We enable you to manage all critical areas from project management to product management, from task management to production, from training to human resources, from a single central hub.</p>
+                <p data-i18n="aboutParagraph4">By transforming complex data into understandable insights, we reduce production losses, optimize costs, and accelerate your business.</p>
+                <p data-i18n="aboutParagraph5">With ROKET MVP Factory, digital transformation is a fast, measurable, and profitable investment.</p>
             </div>
         </div>
     </section>
@@ -54,34 +75,45 @@ From idea to delivery — without the complexity.</p>
             <div class="roket-products-content">
                 <div class="roket-text">
                     <h2 class="section-title" data-i18n="roketProductsTitle">Our Product Ecosystem</h2>
-                    <p data-i18n="roketProductsDesc">MVP FACTORY is part of Roket's comprehensive suite of business management solutions. Designed to work seamlessly together, our products help teams collaborate, innovate, and deliver exceptional results across all aspects of project management and organizational development.</p>
+                    <p class="roket-intro" data-i18n-html="roketProductsIntro">ROKET MVP FACTORY Platform with its Core Modules<br>Build Your Digital Operations, Manage Your Business and Scale</p>
+                    <p class="roket-subtitle" data-i18n="roketProductsSubtitle">ROKET MVP Factory platform consists of 7 integrated core modules:</p>
+                    <ul class="modules-list">
+                        <li><strong>Roket-PMS</strong> <span data-i18n="module1">: Project and Team Management Module</span></li>
+                        <li><strong>Roket-TMS</strong> <span data-i18n="module2">: Task and Work Tracking Management Module</span></li>
+                        <li><strong>Roket-PROD</strong> <span data-i18n="module3">: Product Development and Portfolio Management Module</span></li>
+                        <li><strong>Roket-LMS</strong> <span data-i18n="module4">: Training, Internship and Learning Management Module</span></li>
+                        <li><strong>Roket-HR</strong> <span data-i18n="module5">: Human Resources, CV and Candidate Pool Management Module</span></li>
+                        <li><strong>Roket-PROCESS</strong> <span data-i18n="module6">: Business Process Management and Optimization Module</span></li>
+                        <li><strong>Roket-TWIN</strong> <span data-i18n="module7">: Digital Data Twin and AI Analytics Module</span></li>
+                    </ul>
                 </div>
                 <div class="roket-image">
                     <div class="ecosystem-diagram">
                         <svg class="ecosystem-connections" style="position: absolute; top: 0; left: 0; width: 500px; height: 500px; z-index: 0; pointer-events: none;">
                             <!-- 7 dashed lines connecting center to all orbs -->
                             <!-- Top (0°) - Process Management -->
-                            <line x1="250" y1="250" x2="250" y2="70" stroke="#5AAFBC" stroke-width="2.5" stroke-dasharray="5,3" opacity="0.5" stroke-linecap="round"/>
+                            <line x1="250" y1="250" x2="250" y2="70" stroke="#2854A8" stroke-width="2" stroke-dasharray="5,3" opacity="0.4" stroke-linecap="round"/>
                             <!-- Top-Right (51.43°) - Project Management -->
-                            <line x1="250" y1="250" x2="355" y2="135" stroke="#5AAFBC" stroke-width="2.5" stroke-dasharray="5,3" opacity="0.5" stroke-linecap="round"/>
+                            <line x1="250" y1="250" x2="355" y2="135" stroke="#2854A8" stroke-width="2" stroke-dasharray="5,3" opacity="0.4" stroke-linecap="round"/>
                             <!-- Right (102.86°) - Human Resources Management -->
-                            <line x1="250" y1="250" x2="380" y2="285" stroke="#5AAFBC" stroke-width="2.5" stroke-dasharray="5,3" opacity="0.5" stroke-linecap="round"/>
+                            <line x1="250" y1="250" x2="380" y2="285" stroke="#2854A8" stroke-width="2" stroke-dasharray="5,3" opacity="0.4" stroke-linecap="round"/>
                             <!-- Bottom-Right (154.29°) - Digital Twin -->
-                            <line x1="250" y1="250" x2="323" y2="414" stroke="#5AAFBC" stroke-width="2.5" stroke-dasharray="5,3" opacity="0.5" stroke-linecap="round"/>
+                            <line x1="250" y1="250" x2="323" y2="414" stroke="#2854A8" stroke-width="2" stroke-dasharray="5,3" opacity="0.4" stroke-linecap="round"/>
                             <!-- Bottom (205.71°) - Training Management -->
-                            <line x1="250" y1="250" x2="177" y2="414" stroke="#5AAFBC" stroke-width="2.5" stroke-dasharray="5,3" opacity="0.5" stroke-linecap="round"/>
+                            <line x1="250" y1="250" x2="177" y2="414" stroke="#2854A8" stroke-width="2" stroke-dasharray="5,3" opacity="0.4" stroke-linecap="round"/>
                             <!-- Bottom-Left (257.14°) - Product Portfolio Management -->
-                            <line x1="250" y1="250" x2="120" y2="285" stroke="#5AAFBC" stroke-width="2.5" stroke-dasharray="5,3" opacity="0.5" stroke-linecap="round"/>
+                            <line x1="250" y1="250" x2="120" y2="285" stroke="#2854A8" stroke-width="2" stroke-dasharray="5,3" opacity="0.4" stroke-linecap="round"/>
                             <!-- Top-Left (308.57°) - Task/Goal Management -->
-                            <line x1="250" y1="250" x2="145" y2="135" stroke="#5AAFBC" stroke-width="2.5" stroke-dasharray="5,3" opacity="0.5" stroke-linecap="round"/>
+                            <line x1="250" y1="250" x2="145" y2="135" stroke="#2854A8" stroke-width="2" stroke-dasharray="5,3" opacity="0.4" stroke-linecap="round"/>
                         </svg>
                         <div class="orb orb-center">
                             <div class="orb-content">
-                                <p style="font-size: 24px; margin: 0 0 10px 0; font-weight: bold; color: #ffffff;">roket</p>
+                                <img src="roket_new_emoji.png" alt="Roket" style="width: 48px; height: 48px; object-fit: contain; margin: 0 0 6px 0; display: block; margin-left: auto; margin-right: auto;">
                                 <h3 style="margin: 0 0 12px 0; font-size: 20px; color: #ffffff; font-weight: 700; line-height: 1.2;">MVP FACTORY</h3>
                                 <p style="font-size: 11px; margin: 0; color: #e8eef5; line-height: 1.3;" data-i18n-html="roketEcosystemSubtitle">Yapay Zeka Destekli<br>İnteraktif Süreç<br>Yönetim Platformu</p>
                             </div>
                         </div>
+                        <div class="orbit-ring">
                         <div class="orb orb-1">
                             <div class="orb-inner">
                                 <i class="fas fa-tasks" style="font-size: 24px; color: white; margin-bottom: 8px;"></i>
@@ -124,19 +156,65 @@ From idea to delivery — without the complexity.</p>
                                 <span data-i18n-html="ecosystemTask"></span>
                             </div>
                         </div>
+                        </div>
                     </div>
+                </div>
+            </div>
+            <div class="roket-desc-full">
+                <p data-i18n="roketProductsDesc">With these modules, organizations can manage their projects and tasks more effectively, develop human resources, digitize training and internship processes, track product development processes from a single center, and make operational processes measurable.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHAT WE SOLVE -->
+    <section id="what-we-solve" class="what-we-solve">
+        <div class="container">
+            <h2 class="section-title" data-i18n-html="solutionTitle">Your Business's Digital Operating System: <span class="highlight-text">ROKET MVP Factory</span></h2>
+            <p class="solution-intro" data-i18n="solutionIntro">We consolidate fragmented data and management structures, the biggest challenge for businesses, into a single point. With ROKET MVP Factory Modules, we create your business's digital data twin and optimize all your business processes end-to-end with AI support.</p>
+            
+            <h3 class="solution-subtitle" data-i18n="solutionQuestion">What Problems Do We Solve?</h3>
+            
+            <div class="solution-list">
+                <div class="solution-item">
+                    <h4 data-i18n="solution1Title">From Fragmentation to Unity:</h4>
+                    <p data-i18n="solution1Desc">We bring together all critical areas managed separately—such as projects, tasks, products, production, processes, human resources, and training—into a single platform.</p>
+                </div>
+                
+                <div class="solution-item">
+                    <h4 data-i18n="solution2Title">From Rigid Structures to Scalability:</h4>
+                    <p data-i18n="solution2Desc">With our modular and AI-powered structure, we instantly adapt to your business's growth pace. We offer a flexible technological infrastructure that shapes according to your needs with a modular structure.</p>
+                </div>
+                
+                <div class="solution-item">
+                    <h4 data-i18n="solution3Title">From Complexity to Easy Implementation:</h4>
+                    <p data-i18n="solution3Desc">We make AI "accessible" instead of "unreachable." We add a user-friendly AI experience to your business management that integrates end-to-end with all your business processes without requiring technical knowledge.</p>
+                </div>
+                
+                <div class="solution-item">
+                    <h4 data-i18n="solution4Title">From Data Loss to Meaningful Insights:</h4>
+                    <p data-i18n="solution4Desc">We transform your fragmented, unreadable, and idle data into valuable assets that operate, are analyzed, and enable you to make strategic decisions.</p>
+                </div>
+                
+                <div class="solution-item">
+                    <h4 data-i18n="solution5Title">From High Costs to Operational Profitability:</h4>
+                    <p data-i18n="solution5Desc">We bring unplanned downtime and productivity losses in production to an operational state with a digital data twin model, enabling you to reduce costs and manage your business profitably with your data.</p>
+                </div>
+                
+                <div class="solution-item">
+                    <h4 data-i18n="solution6Title">From Heavy Software to Agile Solutions:</h4>
+                    <p data-i18n="solution6Desc">Instead of expensive, inflexible ERP/MRP/Management applications that require months-long installation processes, we establish a quickly deployable, economical ecosystem tailored exactly to your needs.</p>
                 </div>
             </div>
         </div>
     </section>
 
      <!-- FUTURE PRODUCTS -->
-    <section class="future-products">
+    <section id="future-products" class="future-products">
         <div class="container">
             <h2 class="section-title" data-i18n="productsTitle">MVP FACTORY will grow with you.</h2>
             <p class="section-subtitle" data-i18n="productsSubtitle">Starting with our ready-to-use Project Management (PMS) module, we're building an integrated ecosystem that expands based on your organization's needs. Our roadmap includes scalable Process, Product (PROD), Training (LMS), and Human Resources (HR) modules.</p>
             <div class="products-grid-ready">
-                <div class="product-card">
+                <div class="product-card" onclick="location.href='#pricing'" style="cursor:pointer;">
                     <h3 data-i18n="projectPMS">Project (PMS)</h3>
                     <p data-i18n="projectDesc">Project management and tracking</p>
                     <span class="badge ready" data-i18n="readyForSale">Ready for Sale</span>
@@ -175,6 +253,232 @@ From idea to delivery — without the complexity.</p>
                 </div>
             </div>
             <p class="coming-soon-note" data-i18n-html="infoRequest" style="text-align: center; margin-top: 30px; font-size: 13px; color: #6B7280; font-style: italic;"></p>
+        </div>
+    </section>
+
+    <!-- SECTORS -->
+    <section class="sectors-section">
+        <div class="container">
+            <div class="sectors-content">
+                <div class="sectors-text">
+                    <h2 class="sectors-heading" data-i18n="sectorsTitle">Sectors:</h2>
+                    <ul class="sectors-list">
+                        <li data-i18n="servedSector1">Entrepreneurs</li>
+                        <li data-i18n="servedSector2">Small and Medium-Sized Businesses</li>
+                        <li data-i18n="servedSector3">Corporate Companies</li>
+                        <li data-i18n="servedSector4">Science &amp; Technology Parks</li>
+                        <li data-i18n="servedSector5">Technology Offices</li>
+                        <li data-i18n="servedSector6">TEKMERs</li>
+                        <li data-i18n="servedSector7">Universities</li>
+                        <li data-i18n="servedSector8">Project Groups</li>
+                        <li data-i18n="servedSector9">Individual Users</li>
+                        <li data-i18n="servedSector10">Industrial Companies</li>
+                        <li data-i18n="servedSector11">Startup Offices</li>
+                    </ul>
+                </div>
+                <div class="sectors-grid">
+                    <!-- Row 1: Koyu — Girişimciler, KOBİ, Kurumsal, Teknoparklar -->
+                    <div class="sector-cell active"><i class="fas fa-briefcase"></i></div>
+                    <div class="sector-cell active"><i class="fas fa-building"></i></div>
+                    <div class="sector-cell active"><i class="fas fa-city"></i></div>
+                    <div class="sector-cell active"><i class="fas fa-microchip"></i></div>
+
+                    <!-- Row 2: Açık — Teknoloji Ofisleri, TEKMER, Üniversiteler, Proje Grupları -->
+                    <div class="sector-cell light"><i class="fas fa-display"></i></div>
+                    <div class="sector-cell light"><i class="fas fa-leaf"></i></div>
+                    <div class="sector-cell light"><i class="fas fa-graduation-cap"></i></div>
+                    <div class="sector-cell light"><i class="fas fa-people-group"></i></div>
+
+                    <!-- Row 3: Koyu — Bireysel, Sanayi, Girişim Ofisleri, + extra -->
+                    <div class="sector-cell active"><i class="fas fa-user-tie"></i></div>
+                    <div class="sector-cell active"><i class="fas fa-industry"></i></div>
+                    <div class="sector-cell active"><i class="fas fa-rocket"></i></div>
+                    <div class="sector-cell active"><i class="fas fa-brain"></i></div>
+
+                    <!-- Row 4: Açık — dekoratif -->
+                    <div class="sector-cell light"><i class="fas fa-chart-bar"></i></div>
+                    <div class="sector-cell light"><i class="fas fa-handshake"></i></div>
+                    <div class="sector-cell light"><i class="fas fa-globe"></i></div>
+                    <div class="sector-cell light"><i class="fas fa-sliders"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- İŞ BİRLİKÇİLERİMİZ -->
+    <section class="partners-marquee-section">
+        <div class="partners-marquee-header">
+            <h2 class="partners-marquee-title" data-i18n="partnersTitle">İş Birlikçilerimiz</h2>
+        </div>
+        <div class="marquee-rows">
+
+            <!-- ROW 1 → sola kayan (partner 1–7) -->
+            <div class="marquee-wrapper">
+                <div class="marquee-track">
+                    <div class="marquee-item"><i class="fas fa-bolt"></i><span data-i18n="partner1">Enerji Şirketleri</span></div>
+                    <div class="marquee-item"><i class="fas fa-robot"></i><span data-i18n="partner2">Robotik ve Otomasyon Üreticileri</span></div>
+                    <div class="marquee-item"><i class="fas fa-graduation-cap"></i><span data-i18n="partner3">Eğitim Kurumları, Üniversiteler ve SEM'ler</span></div>
+                    <div class="marquee-item"><i class="fas fa-laptop-code"></i><span data-i18n="partner4">Teknoloji, Bilişim Şirketleri ve Start-Up'lar</span></div>
+                    <div class="marquee-item"><i class="fas fa-scale-balanced"></i><span data-i18n="partner5">Regülatörler</span></div>
+                    <div class="marquee-item"><i class="fas fa-shield-halved"></i><span data-i18n="partner6">Siber Güvenlik Sektörü</span></div>
+                    <div class="marquee-item"><i class="fas fa-flask"></i><span data-i18n="partner7">Teknoparklar ve Kuluçkalar</span></div>
+                    <div class="marquee-item"><i class="fas fa-industry"></i><span data-i18n="partner15">Sanayi Firmaları ve OSB'ler</span></div>
+                    <div class="marquee-item"><i class="fas fa-graduation-cap"></i><span data-i18n="partner16">Eğitim Kurumları, Üniversiteler ve SEM'ler</span></div>
+                    <div class="marquee-item"><i class="fas fa-school"></i><span data-i18n="partner17">Çeşitli Akademiler</span></div>
+                    <div class="marquee-item"><i class="fas fa-chart-line"></i><span data-i18n="partner18">Kalkınma Ajansları</span></div>
+                    <div class="marquee-item"><i class="fas fa-rocket"></i><span data-i18n="partner19">Hızlandırma Merkezleri</span></div>
+                    <!-- duplicate -->
+                    <div class="marquee-item"><i class="fas fa-bolt"></i><span data-i18n="partner1">Enerji Şirketleri</span></div>
+                    <div class="marquee-item"><i class="fas fa-robot"></i><span data-i18n="partner2">Robotik ve Otomasyon Üreticileri</span></div>
+                    <div class="marquee-item"><i class="fas fa-graduation-cap"></i><span data-i18n="partner3">Eğitim Kurumları, Üniversiteler ve SEM'ler</span></div>
+                    <div class="marquee-item"><i class="fas fa-laptop-code"></i><span data-i18n="partner4">Teknoloji, Bilişim Şirketleri ve Start-Up'lar</span></div>
+                    <div class="marquee-item"><i class="fas fa-scale-balanced"></i><span data-i18n="partner5">Regülatörler</span></div>
+                    <div class="marquee-item"><i class="fas fa-shield-halved"></i><span data-i18n="partner6">Siber Güvenlik Sektörü</span></div>
+                    <div class="marquee-item"><i class="fas fa-flask"></i><span data-i18n="partner7">Teknoparklar ve Kuluçkalar</span></div>
+                    <div class="marquee-item"><i class="fas fa-industry"></i><span data-i18n="partner15">Sanayi Firmaları ve OSB'ler</span></div>
+                    <div class="marquee-item"><i class="fas fa-graduation-cap"></i><span data-i18n="partner16">Eğitim Kurumları, Üniversiteler ve SEM'ler</span></div>
+                    <div class="marquee-item"><i class="fas fa-school"></i><span data-i18n="partner17">Çeşitli Akademiler</span></div>
+                    <div class="marquee-item"><i class="fas fa-chart-line"></i><span data-i18n="partner18">Kalkınma Ajansları</span></div>
+                    <div class="marquee-item"><i class="fas fa-rocket"></i><span data-i18n="partner19">Hızlandırma Merkezleri</span></div>
+                </div>
+            </div>
+
+            <!-- ROW 2 → sağa kayan (partner 8–14) -->
+            <div class="marquee-wrapper">
+                <div class="marquee-track reverse">
+                    <div class="marquee-item"><i class="fas fa-landmark"></i><span data-i18n="partner8">Kamu Kuruluşları ve Belediyeler</span></div>
+                    <div class="marquee-item"><i class="fas fa-coins"></i><span data-i18n="partner9">Finans, Bankacılık, Sigorta ve E-ticaret</span></div>
+                    <div class="marquee-item"><i class="fas fa-gavel"></i><span data-i18n="partner10">Hukuk Sektörü</span></div>
+                    <div class="marquee-item"><i class="fas fa-leaf"></i><span data-i18n="partner11">Yeşil Sürdürülebilirlik</span></div>
+                    <div class="marquee-item"><i class="fas fa-handshake"></i><span data-i18n="partner12">Kurumsal Sosyal Sorumluluk ve STK'lar</span></div>
+                    <div class="marquee-item"><i class="fas fa-shield"></i><span data-i18n="partner13">Savunma ve Güvenlik</span></div>
+                    <div class="marquee-item"><i class="fas fa-industry"></i><span data-i18n="partner14">Sanayi Firmaları ve OSB'ler</span></div>
+                    <div class="marquee-item"><i class="fas fa-flask"></i><span data-i18n="partner20">Teknoparklar ve Kuluçkalar</span></div>
+                    <div class="marquee-item"><i class="fas fa-seedling"></i><span data-i18n="partner21">TEKMER'ler</span></div>
+                    <div class="marquee-item"><i class="fas fa-handshake"></i><span data-i18n="partner22">Kurumsal Sosyal Sorumluluk ve STK'lar</span></div>
+                    <div class="marquee-item"><i class="fas fa-briefcase"></i><span data-i18n="partner23">Özel Sektör Firmaları</span></div>
+                    <!-- duplicate -->
+                    <div class="marquee-item"><i class="fas fa-landmark"></i><span data-i18n="partner8">Kamu Kuruluşları ve Belediyeler</span></div>
+                    <div class="marquee-item"><i class="fas fa-coins"></i><span data-i18n="partner9">Finans, Bankacılık, Sigorta ve E-ticaret</span></div>
+                    <div class="marquee-item"><i class="fas fa-gavel"></i><span data-i18n="partner10">Hukuk Sektörü</span></div>
+                    <div class="marquee-item"><i class="fas fa-leaf"></i><span data-i18n="partner11">Yeşil Sürdürülebilirlik</span></div>
+                    <div class="marquee-item"><i class="fas fa-handshake"></i><span data-i18n="partner12">Kurumsal Sosyal Sorumluluk ve STK'lar</span></div>
+                    <div class="marquee-item"><i class="fas fa-shield"></i><span data-i18n="partner13">Savunma ve Güvenlik</span></div>
+                    <div class="marquee-item"><i class="fas fa-industry"></i><span data-i18n="partner14">Sanayi Firmaları ve OSB'ler</span></div>
+                    <div class="marquee-item"><i class="fas fa-flask"></i><span data-i18n="partner20">Teknoparklar ve Kuluçkalar</span></div>
+                    <div class="marquee-item"><i class="fas fa-seedling"></i><span data-i18n="partner21">TEKMER'ler</span></div>
+                    <div class="marquee-item"><i class="fas fa-handshake"></i><span data-i18n="partner22">Kurumsal Sosyal Sorumluluk ve STK'lar</span></div>
+                    <div class="marquee-item"><i class="fas fa-briefcase"></i><span data-i18n="partner23">Özel Sektör Firmaları</span></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PROJECT MANAGEMENT SYSTEM -->
+    <section class="pms-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n-html="pmsTitle">Project Management System (PMS): Manage Your Projects End-to-End</h2>
+            <div class="roket-modules-intro">
+                <p data-i18n="roketModulesIntro">Plan, track and manage your projects with complete transparency with ROKET-PMS. With ROKET-TMS, assign your tasks, everything your team needs from the first task to the last milestone on one platform.</p>
+            </div>
+            <div class="pms-quote">
+                <p data-i18n="pmsQuote">En iyi ekipler sadece çok çalışmaz, uyum içinde çalışır. ROKET-PMS; ekip üyeleri, yöneticiler ve paydaşlar için tek bir güvenilir bilgi kaynağı sunar! Gerçek zamanlı görünürlük, net sorumluluklar ve sıfır belirsizlik. Fikirden teslimata kadar tüm süreci karmaşıklık olmadan yönetin.</p>
+            </div>
+            <div class="pms-visual">
+                <div class="video-container">
+                    <a href="https://www.youtube.com/watch?v=WkviU4mCGHU" target="_blank" class="video-thumb-link">
+                        <img src="https://img.youtube.com/vi/WkviU4mCGHU/maxresdefault.jpg" alt="PMS Demo Video" class="video-thumb-img">
+                        <div class="video-play-btn">
+                            <i class="fab fa-youtube"></i>
+                            <span data-i18n="watchOnYoutube">YouTube'da İzle</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="pms-grid">
+                <div class="pms-card">
+                    <div class="pms-icon"><i class="fas fa-chart-bar"></i></div>
+                    <div class="card-text">
+                        <h3 data-i18n="pmsFeature1Title">Visual Dashboards</h3>
+                        <p data-i18n="pmsFeature1Desc">Kanban, List & Timeline views in one click. Drag-and-drop status updates with instant team visibility.</p>
+                    </div>
+                </div>
+                <div class="pms-card">
+                    <div class="pms-icon"><i class="fas fa-users"></i></div>
+                    <div class="card-text">
+                        <h3 data-i18n="pmsFeature2Title">Team Management</h3>
+                        <p data-i18n="pmsFeature2Desc">Centralized database for team & clients. Smart assignments, contact insights, relationship tracking.</p>
+                    </div>
+                </div>
+                <div class="pms-card">
+                    <div class="pms-icon"><i class="fas fa-calendar-alt"></i></div>
+                    <div class="card-text">
+                        <h3 data-i18n="pmsFeature3Title">Calendar Planning</h3>
+                        <p data-i18n="pmsFeature3Desc">Visual milestone planning with resource conflict detection and capacity balancing.</p>
+                    </div>
+                </div>
+                <div class="pms-card">
+                    <div class="pms-icon"><i class="fas fa-sticky-note"></i></div>
+                    <div class="card-text">
+                        <h3 data-i18n="pmsFeature4Title">Notes & Memory</h3>
+                        <p data-i18n="pmsFeature4Desc">Capture decisions, meeting notes & archives. Organizational knowledge always accessible.</p>
+                    </div>
+                </div>
+                <div class="pms-card">
+                    <div class="pms-icon"><i class="fas fa-chart-line"></i></div>
+                    <div class="card-text">
+                        <h3 data-i18n="pmsFeature5Title">Progress Reports</h3>
+                        <p data-i18n="pmsFeature5Desc">Real-time health monitoring with visual indicators and automatic stakeholder updates.</p>
+                    </div>
+                </div>
+                <div class="pms-card">
+                    <div class="pms-icon"><i class="fas fa-comments"></i></div>
+                    <div class="card-text">
+                        <h3 data-i18n="pmsFeature6Title">Live Collaboration</h3>
+                        <p data-i18n="pmsFeature6Desc">Built-in video conferencing, screen sharing, and activity feeds. No tool switching needed.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- VERSION COMPARISON -->
+            <div class="version-comparison" id="version-comparison">
+                <div class="version-column version-1">
+                    <h3 data-i18n="version1Title">Versiyon 1:</h3>
+                    <h4 data-i18n="version1Subtitle">Mevcut Özellikler:</h4>
+                    <ul class="feature-list">
+                        <li data-i18n="v1Feature1">Dashboard ile temel proje istatistikleri</li>
+                        <li data-i18n="v1Feature2">Proje durumu takibi</li>
+                        <li data-i18n="v1Feature3">Üye ve çalışan yönetimi</li>
+                        <li data-i18n="v1Feature4">Görev atama ve takibi</li>
+                        <li data-i18n="v1Feature5">Yaklaşan etkinlikler ve görevler görünümü</li>
+                        <li data-i18n="v1Feature6">Takvim entegrasyonu</li>
+                        <li data-i18n="v1Feature7">Not defteri</li>
+                        <li data-i18n="v1Feature8">Temel ilerleme yüzdesi gösterimi</li>
+                        <li data-i18n="v1Feature9">Manuel proje oluşturma</li>
+                        <li data-i18n="v1Feature10">Basit raporlama</li>
+                        <li data-i18n="v1Feature11">Video Konferans</li>
+                        <li data-i18n="v1Feature12">Ekip içi Mesajlaşma</li>
+                    </ul>
+                </div>
+                
+                <div class="version-column version-2">
+                    <h3 data-i18n="version2Title">Versiyon 2:</h3>
+                    <h4 data-i18n="version2Subtitle">Yakında:</h4>
+                    <ul class="feature-list">
+                        <li data-i18n="v2Feature1">AI Destekli Proje Planlaması</li>
+                        <li data-i18n="v2Feature2">Otomatik süre tahmini ve kaynak dağılımı</li>
+                        <li data-i18n="v2Feature3">Bütçe kontrolü ve maliyet analizi</li>
+                        <li data-i18n="v2Feature4">Detaylı çalışma saati ve verimlilik analizi</li>
+                        <li data-i18n="v2Feature5">Slack, Jira, GitHub entegrasyonları</li>
+                        <li data-i18n="v2Feature6">Hazır proje şablonları</li>
+                        <li class="highlight" data-i18n="v2Feature7">Diğer Modül ilaveleri ile tam entegrasyon</li>
+                        <li class="highlight" data-i18n="v2Feature8">SDK entegrasyon kiti</li>
+                        <li class="highlight" data-i18n="v2Feature9">Roket AI Agent</li>
+                        <li class="highlight special" data-i18n="v2Feature10">Eller Serbest -Roket AI Agent</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -223,66 +527,6 @@ From idea to delivery — without the complexity.</p>
                     <div class="feature-content">
                         <h3 data-i18n="feature7Title">Digital Twin Method</h3>
                         <p data-i18n="feature7Desc">Create a digital model of all your organization's processes. Whatever happens in the real world, the platform reflects it instantly. Generate scenarios, run simulations, test your decisions — before bringing them to life.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- PROJECT MANAGEMENT SYSTEM -->
-    <section class="pms-section">
-        <div class="container">
-            <h2 class="section-title" data-i18n-html="pmsTitle">Project Management System (PMS): Manage Your Projects End-to-End</h2>
-            <div class="pms-intro">
-                <p data-i18n="pmsIntro1">As teams grow, projects become complex. Tasks multiply, responsibilities blur, deadlines slip. Most tools merely make this chaos visible — they don't solve it.</p>
-                <p data-i18n="pmsIntro2">MVP Factory's Project Management System (PMS) takes a different approach. It brings together scattered tools, disconnected communication, and data silos into a single integrated platform. Your organization's project data, teams, and workflows now live under one roof — transparent, traceable, and completely under your control.</p>
-            </div>
-            <div class="pms-visual">
-                <div class="video-container">
-                    <iframe class="pms-video" src="https://www.youtube.com/embed/AznzOdQN11U" title="Project Management System (PMS) Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="pms-grid">
-                <div class="pms-card">
-                    <div class="pms-icon"><i class="fas fa-chart-bar"></i></div>
-                    <div class="card-text">
-                        <h3 data-i18n="pmsFeature1Title">Visual Dashboards</h3>
-                        <p data-i18n="pmsFeature1Desc">Kanban, List & Timeline views in one click. Drag-and-drop status updates with instant team visibility.</p>
-                    </div>
-                </div>
-                <div class="pms-card">
-                    <div class="pms-icon"><i class="fas fa-users"></i></div>
-                    <div class="card-text">
-                        <h3 data-i18n="pmsFeature2Title">Team Management</h3>
-                        <p data-i18n="pmsFeature2Desc">Centralized database for team & clients. Smart assignments, contact insights, relationship tracking.</p>
-                    </div>
-                </div>
-                <div class="pms-card">
-                    <div class="pms-icon"><i class="fas fa-calendar-alt"></i></div>
-                    <div class="card-text">
-                        <h3 data-i18n="pmsFeature3Title">Calendar Planning</h3>
-                        <p data-i18n="pmsFeature3Desc">Visual milestone planning with resource conflict detection and capacity balancing.</p>
-                    </div>
-                </div>
-                <div class="pms-card">
-                    <div class="pms-icon"><i class="fas fa-sticky-note"></i></div>
-                    <div class="card-text">
-                        <h3 data-i18n="pmsFeature4Title">Notes & Memory</h3>
-                        <p data-i18n="pmsFeature4Desc">Capture decisions, meeting notes & archives. Organizational knowledge always accessible.</p>
-                    </div>
-                </div>
-                <div class="pms-card">
-                    <div class="pms-icon"><i class="fas fa-chart-line"></i></div>
-                    <div class="card-text">
-                        <h3 data-i18n="pmsFeature5Title">Progress Reports</h3>
-                        <p data-i18n="pmsFeature5Desc">Real-time health monitoring with visual indicators and automatic stakeholder updates.</p>
-                    </div>
-                </div>
-                <div class="pms-card">
-                    <div class="pms-icon"><i class="fas fa-comments"></i></div>
-                    <div class="card-text">
-                        <h3 data-i18n="pmsFeature6Title">Live Collaboration</h3>
-                        <p data-i18n="pmsFeature6Desc">Built-in video conferencing, screen sharing, and activity feeds. No tool switching needed.</p>
                     </div>
                 </div>
             </div>
@@ -448,9 +692,10 @@ From idea to delivery — without the complexity.</p>
                     <div class="footer-column">
                         <h4>Contact</h4>
                         <p style="margin: 0; font-size: 14px; color: #6B7280;"><strong>E-mail:</strong> <a href="mailto:info@roket.info" style="color: #2B70B3; text-decoration: none;">info@roket.info</a></p>
+                        <p style="margin: 8px 0 0 0; font-size: 14px; color: #6B7280;"><strong>Tel:</strong> <a href="tel:+905301227843" style="color: #2B70B3; text-decoration: none;">+90 530 122 78 43</a></p>
                         <p style="margin: 8px 0 0 0; font-size: 12px; color: #6B7280; line-height: 1.4;"><strong>Address:</strong> Teknopark İstanbul, Sanayi Mah. Teknopark Bulvarı No:1/4C 34906 Pendik/İstanbul</p>
                         <div style="margin-top: 10px; display: flex; gap: 10px; align-items: center;">
-                            <a href="https://www.instagram.com/roket_academy/" target="_blank" style="color: #9CA3AF; font-size: 16px; transition: color 0.3s; text-decoration: none;" title="Instagram">
+                            <a href="https://www.instagram.com/roket_technology/" target="_blank" style="color: #9CA3AF; font-size: 16px; transition: color 0.3s; text-decoration: none;" title="Instagram">
                                 <i class="fab fa-instagram"></i>
                             </a>
                             <span style="color: #2B70B3; font-size: 14px;">|</span>
